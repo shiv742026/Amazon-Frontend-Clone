@@ -1,23 +1,186 @@
-* {
-    margin: 0;
-    font-family: Arial;
-    border: border-box;
-    
+/* ===== GLOBAL ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background:#EAEDED;
+}
+
+/* ===== NAVBAR ===== */
 .navbar{
-     height: 60px;
-     background-color: #0f1111;
-     color: white;
+    height:60px;
+    background:#131921;
+    display:flex;
+    align-items:center;
+    padding:0 20px;
+    color:white;
 }
 
-.nav-logo{
-    height: 50px;
-    width: 100px;
+.logo{
+    width:100px;
+    margin-right:20px;
 }
 
-.logo {
-      background-image: url("amazon_logo.png");
-      height: 50px;
-      width: 100%;
+.search{
+    flex:1;
+    display:flex;
+    height:40px;
+}
+
+.search select{
+    width:60px;
+    border:none;
+    background:#f3f3f3;
+    border-radius:5px 0 0 5px;
+}
+
+.search input{
+    flex:1;
+    border:none;
+    padding:10px;
+}
+
+.search button{
+    width:50px;
+    border:none;
+    background:#febd69;
+    border-radius:0 5px 5px 0;
+    cursor:pointer;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    font-size:13px;
+    margin-left:20px;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height:420px;
+    background: linear-gradient(135deg,#ff9933,#ff4e00,#8e2de2);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero-content h2{
+    font-size:26px;
+    margin-bottom:10px;
+}
+
+.hero-content p{
+    margin-bottom:20px;
+}
+
+.hero-content button{
+    background:#ffd814;
+    border:none;
+    padding:12px 30px;
+    font-weight:bold;
+    font-size:16px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+.hero-content button:hover{
+    background:#f7ca00;
+}
+
+/* ===== PRODUCTS ===== */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:5px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    transition:0.2s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:contain;
+}
+
+.title{
+    font-size:14px;
+    margin:10px 0;
+}
+
+.rating{
+    color:#f0c14b;
+}
+
+.price{
+    font-weight:bold;
+    font-size:18px;
+}
+
+.old{
+    text-decoration:line-through;
+    color:gray;
+    font-size:13px;
+}
+
+.badge{
+    background:#cc0c39;
+    color:white;
+    font-size:12px;
+    padding:3px 6px;
+    display:inline-block;
+    margin-bottom:5px;
+    border-radius:3px;
+}
+
+.prime{
+    font-size:12px;
+    color:#007185;
+    margin-top:5px;
+}
+
+.cart{
+    margin-top:10px;
+    background:#ffd814;
+    border:none;
+    padding:8px;
+    width:100%;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.cart:hover{
+    background:#f7ca00;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#131A22;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    font-size:12px;
 }
