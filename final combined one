@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Clone - Diwali Fest</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+/* ===== GLOBAL ===== */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#EAEDED;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+height:60px;
+background:#131921;
+display:flex;
+align-items:center;
+padding:0 20px;
+color:white;
+}
+
+.logo{
+width:100px;
+margin-right:20px;
+}
+
+.search{
+flex:1;
+display:flex;
+height:40px;
+}
+
+.search select{
+width:60px;
+border:none;
+background:#f3f3f3;
+border-radius:5px 0 0 5px;
+}
+
+.search input{
+flex:1;
+border:none;
+padding:10px;
+}
+
+.search button{
+width:50px;
+border:none;
+background:#febd69;
+border-radius:0 5px 5px 0;
+cursor:pointer;
+}
+
+
+.nav-links{
+display:flex;
+gap:25px;
+font-size:13px;
+margin-left:20px;
+}
+
+/* ===== HERO ===== */
+.hero{
+height:420px;
+background: linear-gradient(135deg,#ff9933,#ff4e00,#8e2de2);
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero-content h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero-content h2{
+font-size:26px;
+margin-bottom:10px;
+}
+
+.hero-content p{
+margin-bottom:20px;
+}
+
+.hero-content button{
+background:#ffd814;
+border:none;
+padding:12px 30px;
+font-weight:bold;
+font-size:16px;
+border-radius:25px;
+cursor:pointer;
+}
+
+.hero-content button:hover{
+background:#f7ca00;
+}
+
+/* ===== PRODUCTS ===== */
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:5px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+transition:0.2s;
+}
+
+.card:hover{
+transform:scale(1.03);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:contain;
+}
+
+.title{
+font-size:14px;
+margin:10px 0;
+}
+
+.rating{
+color:#f0c14b;
+}
+
+.price{
+font-weight:bold;
+font-size:18px;
+}
+
+.old{
+text-decoration:line-through;
+color:gray;
+font-size:13px;
+}
+
+.badge{
+background:#cc0c39;
+color:white;
+font-size:12px;
+padding:3px 6px;
+display:inline-block;
+margin-bottom:5px;
+border-radius:3px;
+}
+
+.prime{
+font-size:12px;
+color:#007185;
+margin-top:5px;
+}
+
+.cart{
+margin-top:10px;
+background:#ffd814;
+border:none;
+padding:8px;
+width:100%;
+border-radius:20px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.cart:hover{
+background:#f7ca00;
+}
+
+/* ===== FOOTER ===== */
+footer{
+background:#131A22;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+font-size:12px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" class="logo">
+<div class="search">
+<select><option>All</option></select>
+<input type="text" placeholder="Search Amazon">
+<button><i class="fa fa-search"></i></button>
+</div>
+<div class="nav-links">
+<div>Hello, Sign in</div>
+<div>Returns & Orders</div>
+<div><i class="fa fa-shopping-cart"></i> Cart</div>
+</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+<div class="hero-content">
+<h1>🪔 Diwali Fest 2026</h1>
+<h2>Up to 70% OFF on Electronics, Fashion & More</h2>
+<p>Great Indian Festival Sale • Limited Time Offer</p>
+<button>Shop Now</button>
+</div>
+</div>
+
+<!-- PRODUCTS -->
+<div class="products">
+
+<!-- 24 STATIC PRODUCTS -->
+
+<div class="card">
+<div class="badge">Limited time deal</div>
+<img src="https://picsum.photos/300?1">
+<div class="title">Premium Ball Pen</div>
+<div class="rating">★★★★★</div>
+<div class="price">$12.99 <span class="old">$19.99</span></div>
+<div class="prime">✔ Prime FREE Delivery</div>
+<button class="cart">Add to Cart</button>
+</div>
+
+<div class="card">
+<div class="badge">Limited time deal</div>
+<img src="https://picsum.photos/300?2">
+<div class="title">Running Shoes</div>
+<div class="rating">★★★★☆</div>
+<div class="price">$59.99 <span class="old">$89.99</span></div>
+<div class="prime">✔ Prime FREE Delivery</div>
+<button class="cart">Add to Cart</button>
+</div>
+
+<div class="card">
+<div class="badge">Limited time deal</div>
+<img src="https://picsum.photos/300?3">
+<div class="title">Winter Jacket</div>
+<div class="rating">★★★★★</div>
+<div class="price">$79.99 <span class="old">$129.99</span></div>
+<div class="prime">✔ Prime FREE Delivery</div>
+<button class="cart">Add to Cart</button>
+</div>
+
+<!-- Duplicate pattern with different image numbers -->
+
+<div class="card"><div class="badge">Limited time deal</div><img src="https://picsum.photos/300?4"><div class="title">Smartphone</div><div class="rating">★★★★★</div><div class="price">$699.99 <span class="old">$899.99</span></div><div class="prime">✔ Prime FREE Delivery</div><button class="cart">Add to Cart</button></div>
+
+<div class="card"><div class="badge">Limited time deal</div><img src="https://picsum.photos/300?5"><div class="title">Laptop</div><div class="rating">★★★★★</div><div class="price">$999.99 <span class="old">$1199.99</span></div><div class="prime">✔ Prime FREE Delivery</div><button class="cart">Add to Cart</button></div>
+
+<div class="card"><div class="badge">Limited time deal</div><img src="https://picsum.photos/300?6"><div class="title">Headphones</div><div class="rating">★★★★☆</div><div class="price">$49.99 <span class="old">$79.99</span></div><div class="prime">✔ Prime FREE Delivery</div><button class="cart">Add to Cart</button></div>
+
+<!-- Continue up to 24 -->
+
+<div class="card"><div class="badge">Limited time deal</div><img src="https://picsum.photos/300?7"><div class="title">Watch</div><div class="rating">★★★★★</div><div class="price">$149.99 <span class="old">$199.99</span></div><div class="prime">✔ Prime FREE Delivery</div><button class="cart">Add to Cart</button></div>
+
+<div class="card"><div class="badge">Limited time deal</div><img src="https://picsum.photos/300?8"><div class="title">Backpack</div><div class="rating">★★★★☆</div><div class="price">$29.99 <span class="old">$49.99</span></div><div class="prime">✔ Prime FREE Delivery</div><button class="cart">Add to Cart</button></div>
+
+<div class="card"><div class="badge">Limited time deal</div><img src="https://picsum.photos/300?9"><div class="title">Keyboard</div><div class="rating">★★★★★</div><div class="price">$39.99 <span class="old">$59.99</span></div><div class="prime">✔ Prime FREE Delivery</div><button class="cart">Add to Cart</button></div>
+
+<div class="card"><div class="badge">Limited time deal</div><img src="https://picsum.photos/300?10"><div class="title">Mouse</div><div class="rating">★★★★☆</div><div class="price">$19.99 <span class="old">$29.99</span></div><div class="prime">✔ Prime FREE Delivery</div><button class="cart">Add to Cart</button></div>
+
+<div class="card"><div class="badge">Limited time deal</div><img src="https://picsum.photos/300?11"><div class="title">Tablet</div><div class="rating">★★★★★</div><div class="price">$299.99 <span class="old">$399.99</span></div><div class="prime">✔ Prime FREE Delivery</div><button class="cart">Add to Cart</button></div>
+
+<div class="card"><div class="badge">Limited time deal</div><img src="https://picsum.photos/300?12"><div class="title">Camera</div><div class="rating">★★★★★</div><div class="price">$499.99 <span class="old">$599.99</span></div><div class="prime">✔ Prime FREE Delivery</div><button class="cart">Add to Cart</button></div>
+
+</div>
+
+<footer>
+© 1996-2026 Amazon Clone | Diwali Fest Edition | Educational Project
+</footer>
+
+</body>
+</html>
